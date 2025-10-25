@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phân Công Lao Động</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Phân Công Lao Động</h1>
+
+  <div class="input-section">
+    <h2>Nhập Thông Tin Vi Phạm</h2>
+    <div class="input-group">
+      <input type="text" id="nameInput" placeholder="Tên vi phạm (VD: Nguyễn Văn A)" />
+      <input type="number" id="violationsInput" placeholder="Số lần vi phạm" min="1" />
+      <button onclick="addViolation()">Thêm</button>
+    </div>
+  </div>
+
+  <div class="list-section" id="listSection" style="display:none;">
+    <h2>Danh Sách Vi Phạm</h2>
+    <div id="violationsList"></div>
+    <button class="generate-btn" onclick="generateSchedule()">Tạo Bảng Phân Công</button>
+  </div>
+
+  <div class="table-section" id="tableSection" style="display:none;">
+    <h2>Bảng Phân Công</h2>
+    <table id="scheduleTable">
+      <thead id="tableHead"></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+<footer><small>MADE BY: LE TRONG NGUYEN REAL 🧸</small></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
